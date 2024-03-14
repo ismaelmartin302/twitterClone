@@ -40,6 +40,11 @@
           "builder": "@angular-devkit/build-angular:application",
           "options": {
             "outputPath": "dist/twitter-clone",
+            "stylePreprocessorOptions": {
+              "includePaths": [
+                "src/styles" 
+              ]
+            },
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -52,9 +57,12 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "node_modules/bootstrap-icons/font/bootstrap-icons.min.css"
             ],
-            "scripts": [],
+            "scripts": [
+              "node_modules/bootstrap/dist/js/bootstrap.min.js"
+            ],
             "server": "src/main.server.ts",
             "prerender": true,
             "ssr": {
