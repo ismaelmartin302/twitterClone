@@ -1,1 +1,9 @@
-<h1 class="bg-primary rounded d-inline-block p-3 text-white m-3">Hola</h1>
+<main class="container h-100">
+    <article class="row h-100">
+        <app-sidebar class="col"></app-sidebar>
+        <section class="col-6 border-start border-end">
+            <router-outlet></router-outlet>
+        </section>
+        <app-sidesection class="d-none d-lg-block col"></app-sidesection>
+    </article>
+</main>
